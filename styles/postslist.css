@@ -1,0 +1,108 @@
+body {
+    background: #ffeedd;
+}
+
+.post {
+    float: left;
+    position: relative;
+    display: inline-table;
+    width: 40%;
+    height: 20%;
+    background: #fff;
+    box-shadow: 0 4px 10px 0 rgba(17, 4, 63, 0.2), 0 4px 20px 0 rgba(79, 19, 97, 0.19);
+    margin: 10px 10px 10px 20px;
+    border-radius: 20px;
+}
+
+.post:hover {
+    box-shadow: 0 36px 68px 0 rgba(0.5, 0.5, 0.5, 0.5);
+}
+
+.postAuthor {
+    text-align: center;
+    color: gray;
+    max-width: 13%;
+    display: table-cell;
+    vertical-align: middle;
+    width: 13%;
+    font-weight: 500;
+    font-family: Arial, cursive;
+    font-size: 20px;
+}
+
+.postBody {
+    width: 75%;
+    display: table-cell;
+    text-align: left;
+    background-color: #E8E8E8;
+    color: #000000;
+    border-radius: 0 15px 15px 0;
+    padding: 0 20px;
+
+}
+
+.postTitle {
+    color: gray;
+    display: block;
+    height: 20px;
+    font-weight: 500;
+    font-family: Arial, cursive;
+    font-size: 17px;
+    overflow: hidden;
+}
+
+.deleteIcon {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.deleteIcon:hover,
+.deleteIcon:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.viewIcon {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.viewIcon:hover,
+.viewIcon:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.deletePostPopUpContent {
+    background-color: white;
+    margin: 300px auto auto auto;
+    padding: 2px 22px 22px 22px;
+    border: 2px solid #fff;
+    color: black;
+    width: 30%;
+    height: 10%;
+    overflow: hidden;
+    font-family: Arial, cursive;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#permitDelete{
+    float: left;
+    width: 30%;
+    background-color: #4CAF50;
+    font-size: 130%;
+}
+
+#cancelDelete{
+    float: right;
+    width: 30%;
+    background-color: red;
+    font-size: 130%;
+}
