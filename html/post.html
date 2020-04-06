@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!--Included Google Fonts file here-->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono|Montez&display=swap" rel="stylesheet">
+    <link href="../styles/common.css" rel="stylesheet">
+    <link href="../styles/post.css" rel="stylesheet">
+</head>
+
+<body>
+<div>
+    <!-- Included all the code for the header and home page here -->
+    <div id="header">
+        <!-- Header Buttons -->
+        <input type="button" value="Sign In" class="headerButton" id="signInButton" style="right: 0;">
+        <input type="button" value="Sign Up" class="headerButton" id="signUpButton" style="right: 110px;">
+        <!-- Title of the website -->
+        <p id="title">Scribbler</p>
+        <!-- Title Description -->
+        <p id="titleDesc">Explore, Imagine, Create</p>
+    </div>
+    <!-- Sign Up Pop Up -->
+    <div id="signUpPopUp" class="popUp">
+        <div class="signUpPopUpContent">
+            <span class="close">&times;</span>
+            <form action="/">
+                <div class="signUpContainer">
+                    <h2>Get Started</h2>
+                    <hr>
+                    <label class="label">Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                    <label class="label">Username</label>
+                    <input type="text" placeholder="Enter your username" required>
+                    <label class="label">Password</label>
+                    <input type="password" placeholder="Enter your password" required>
+                    <label class="label">Confirm Password</label>
+                    <input type="password" placeholder="Re-enter your password" required>
+                    <input type="submit" class="signUpButton" value="Sign Up">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Sign In Pop Up -->
+    <div id="signInPopUp" class="popUp">
+        <div class="signInPopUpContent">
+            <span class="close">&times;</span>
+            <form action="/">
+                <div class="signInContainer">
+                    <h2>Welcome Back!</h2>
+                    <hr>
+                    <label class="label">Username</label>
+                    <input type="text" placeholder="Enter your username" required>
+                    <label class="label">Password</label>
+                    <input type="password" placeholder="Enter your password" required>
+                    <input type="submit" class="signInButton" value="Sign In">
+                </div>
+                <div class="signInModalFooterContainer">
+                    Not a member?
+                    <span id="signInPopUpFooter" onclick="openSignUpPopUp()">Sign Up</span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--Post Details Division-->
+    <div class="postDetail">
+        <div class="postHeading">
+            <h3 id="postTitle">Everything you should know about ‘module’ & ‘require’ in Node.js</h3>
+        </div>
+        <div class="postAuthor">
+            <button type="button" onclick="editPost()" id="editButton">Edit<i class="fa fa-edit"></i></button>
+            <p>Srishti Gupta</p>
+        </div>
+        <div class="postBody">
+            <p id="postDesc">Node.js treats each JavaScript file as a separate module. For instance, if you have a
+                file containing some code and this file is named xyz.js, then this file is treated as a module in Node,
+                and you can say that you’ve created a module named xyz. Let’s take an example to understand this better.
+                You have a file named circle.js which consists of the logic for calculating the area & the circumference
+                of a circle of a given radius, as given below: You can call circle.js file a module named circle. You
+                might be wondering why is there a need to have multiple modules? You could have just written all the
+                code in a single module. Well, it is very important to write modular code. By modular, I mean to say
+                that your code should be independent and should be loosely coupled. Imagine that there’s a large
+                application and you have all your code written in just one place, just one file. Too messy, right?
+            </p>
+        </div>
+        <div class="likePost">
+            <button onclick="likePost()" id="likeButton"><i class="fa fa-thumbs-up">Like</i></button>
+            <p id='likeTrack'>Be the first one to like this!</p>
+        </div>
+        <div class="commentPost">
+            <form>
+                <label class="label"></label>
+                <textarea cols="30" rows="23" placeholder="Leave a comment..." id="commentArea" required></textarea><br>
+                <input type="button" id="commentButton" value="Comment" onclick="commentPost()">
+            </form>
+            <p class="commentTitle">All Comments</p>
+            <div class="allCommentsSection" id="commentSection">
+                <div class="commentBody">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+<script src="../scripts/common.js"></script>
+<script src="../scripts/post.js"></script>
+</html>
