@@ -1,0 +1,71 @@
+body {
+    overflow: hidden;
+    width: 940px;
+    height: 1040px;
+    background: url('../images/background.jpg') no-repeat center center;
+    background-size: cover;
+    margin: 0 !important;
+    display: block;
+}
+
+textarea {
+    width: 95%;
+    height: 250px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    background-color: #f1f1f1;
+    font-size: medium;
+    resize: none;
+    font-family: Arial, cursive;
+    font-weight: 500;
+}
+
+.bodyButton {
+    background: orange;
+    color: black;
+    cursor: pointer;
+    width: 100px;
+    font-family: Arial, cursive;
+    font-size: 90%;
+    padding: 11px;
+    margin: 11px 11px 0 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#body {
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    position: absolute;
+    top: 43%;
+    left: 44%;
+}
+
+.createPostPopUpContent {
+    background-color: white;
+    padding: 2px 22px 22px 22px;
+    border: 2px solid #fff;
+    color: black;
+    width: 70%;
+    overflow: hidden;
+    font-family: Arial, cursive;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 1% auto auto;
+    text-align: left;
+}
+
+#createButton {
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+    width: 100px;
+    font-family: Arial, cursive;
+    font-size: 90%;
+    padding: 11px;
+    margin-left: 45%;
+    text-align: center;
+    vertical-align: middle;
+}
